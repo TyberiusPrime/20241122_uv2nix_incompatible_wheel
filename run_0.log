@@ -1,0 +1,25 @@
+warning: Git tree '/project/builds/hammer_build_vmprof_0.4.17/build' is dirty
+trace: pytz matched to 2024.1
+trace: six matched to 1.16.0
+these 4 derivations will be built:
+  /nix/store/05pz3pkrjcdl8sd9jbzczdv94kxlqjr9-vmprof-0.4.17-pp3-none-any.whl.drv
+  /nix/store/gl90pgawgw7vlz55lrznwz2051hcxwy6-uv2nix-hammer-app-0.1.0.drv
+  /nix/store/lwpv5iazbbmsvyd4f6h3zkwz39bvg3xf-vmprof-0.4.17.drv
+  /nix/store/3iwp43r7dmk4qcycw785s80nir3n222j-test-venv.drv
+building '/nix/store/gl90pgawgw7vlz55lrznwz2051hcxwy6-uv2nix-hammer-app-0.1.0.drv'...
+building '/nix/store/05pz3pkrjcdl8sd9jbzczdv94kxlqjr9-vmprof-0.4.17-pp3-none-any.whl.drv'...
+building '/nix/store/lwpv5iazbbmsvyd4f6h3zkwz39bvg3xf-vmprof-0.4.17.drv'...
+error: builder for '/nix/store/lwpv5iazbbmsvyd4f6h3zkwz39bvg3xf-vmprof-0.4.17.drv' failed with exit code 2;
+       last 10 log lines:
+       > Executing pyprojectWheelDist
+       > Creating dist...
+       > Finished executing pyprojectWheelDist
+       > Running phase: installPhase
+       > Executing pyprojectInstallPhase
+       > Using Python 3.12.6 environment at /nix/store/wfbjq35kxs6x83c3ncpfxdyl5gbhdx4h-python3-3.12.6
+       > warning: Ignoring invalid `SSL_CERT_FILE`. File does not exist: /no-cert-file.crt.
+       > Resolved 1 package in 1ms                                              
+       > error: Failed to determine installation plan
+       >   Caused by: A path dependency is incompatible with the current platform: vmprof-0.4.17-pp3-none-any.whl
+       For full logs, run 'nix log /nix/store/lwpv5iazbbmsvyd4f6h3zkwz39bvg3xf-vmprof-0.4.17.drv'.
+error: 1 dependencies of derivation '/nix/store/3iwp43r7dmk4qcycw785s80nir3n222j-test-venv.drv' failed to build
